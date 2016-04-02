@@ -29,6 +29,38 @@ struct node{
 };
 
 
-int between_days(struct node *date1head, struct node *date2head){
+int between_days(struct node *date1head, struct node *date2head)
+{
+	int date1 = 0, month1 = 0, year1 = 0, i = 0, j = 0, date2 = 0, month2 = 0, year2 = 0;
+	while (i <= 1)
+	{
+		date1 = date1 * 10 + date1head->data;
+		i++;
+	}
+	while (i <= 3)
+	{
+		month1 = month1 * 10 + date1head->data;
+		i++;
+	}
+	while (i <= 7)
+	{
+		year1 = year1 * 10 + date1head->data;
+		i++;
+	}
+	while (j <= 1)
+	{
+		date2 = date2 * 10 + date2head->data;
+		j++;
+	}
+	while (j <= 3)
+	{
+		month2 = month2 * 10 + date2head->data;
+		j++;
+	}
+	while (j <= 7)
+	{
+		year2 = year2 * 10 + date2head->data;
+		j++;
+	}
 	return -1;
 }
